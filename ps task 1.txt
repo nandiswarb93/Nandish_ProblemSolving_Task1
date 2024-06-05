@@ -1,0 +1,71 @@
+n = +prompt("enter a number : ")
+sum=""
+for( i =1;i<n;i++)
+{
+    if(i%2 == 0 )
+    {
+      sum+=i+" "
+    }
+}
+console.log(sum)
+
+n = +prompt("enter a number : ")
+a = 0 
+b = 1
+s=""
+sum = 0
+for(i=0;i<n;i++)
+{
+    s =s+a+" "
+    c = a+b
+    a=b
+    b=c
+}
+console.log(s)
+
+for(i of s)
+{
+    if(i%2 != 0)
+    {
+        sum = sum + Number(i)
+    }
+}
+console.log("odd numnbers only added in fibonaccisum is :  "+sum)
+
+
+
+n = +prompt("enter a number : ")
+a = 0 
+b = 1
+s=""
+sum = 0
+for(i=0;i<n;i++)
+{
+    s =s+a+" "
+    c = a+b
+    a=b
+    b=c
+}
+console.log(s)
+
+for(i of s)
+{
+    if(i%2 != 0)
+    {
+        sum = sum + Number(i)
+    }
+}
+console.log("odd numnbers only added number once  :  "+(sum-1))
+
+
+o/p:
+
+
+enter a number : 10
+2 4 6 8 
+enter a number : 5
+0 1 1 2 3 
+odd numnbers only added in fibonaccisum is :  5
+enter a number : 5
+0 1 1 2 3 
+odd numnbers only added number once  :  4
